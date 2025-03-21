@@ -1,0 +1,1241 @@
+{
+    "switches": [
+        {
+            "dpid": 3,
+            "rules": [
+                {
+                    "rule_id": 1,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 2,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.5",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 3,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.6",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 4,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 5,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.6",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 6,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.5",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 7,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 400
+                },
+                {
+                    "rule_id": 8,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 9,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 10,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 11,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.7",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 12,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.3",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 13,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.4",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 14,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.3",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 15,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.4",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 16,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.8",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 17,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.7",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 18,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 19,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                }
+            ]
+        },
+        {
+            "dpid": 2,
+            "rules": [
+                {
+                    "rule_id": 20,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.5",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 21,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.6",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 22,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.5",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 23,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.6",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 24,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 400
+                },
+                {
+                    "rule_id": 25,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 26,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 27,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.3",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 28,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.4",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 29,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.7",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 30,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 31,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.3",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 32,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.4",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 33,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.7",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 34,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.8",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 35,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 36,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                }
+            ]
+        },
+        {
+            "dpid": 1,
+            "rules": [
+                {
+                    "rule_id": 37,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.5",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 38,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.6",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 39,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.5",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 40,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.6",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 41,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 42,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 43,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.7",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 44,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.8",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 45,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.7",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 46,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 47,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 48,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                }
+            ]
+        },
+        {
+            "dpid": 5,
+            "rules": [
+                {
+                    "rule_id": 49,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.5",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 50,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.6",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 51,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.5",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 52,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.6",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 53,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 54,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 55,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.7",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 56,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.8",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 57,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.7",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 58,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 59,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 60,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                }
+            ]
+        },
+        {
+            "dpid": 6,
+            "rules": [
+                {
+                    "rule_id": 61,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.5",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 62,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.5",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 63,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 80,
+                    "ipv4_src": "10.0.0.1",
+                    "ipv4_dst": "10.0.0.6",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 64,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 80,
+                    "ipv4_src": "10.0.0.6",
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 65,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 66,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 67,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 68,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                }
+            ]
+        },
+        {
+            "dpid": 4,
+            "rules": [
+                {
+                    "rule_id": 69,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 70,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 71,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.3",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 72,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.4",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 73,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.3",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 74,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.4",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 75,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 76,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                }
+            ]
+        },
+        {
+            "dpid": 7,
+            "rules": [
+                {
+                    "rule_id": 77,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.1",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 78,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "DROP"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 79,
+                    "in_port": 1,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.7",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 80,
+                    "in_port": 2,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_dst": 21,
+                    "ipv4_src": "10.0.0.8",
+                    "ipv4_dst": "10.0.0.2",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 3
+                        }
+                    ],
+                    "priority": 700
+                },
+                {
+                    "rule_id": 81,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "tcp_src": 21,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.7",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 1
+                        }
+                    ],
+                    "priority": 800
+                },
+                {
+                    "rule_id": 82,
+                    "eth_type": 2054,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1200
+                },
+                {
+                    "rule_id": 83,
+                    "eth_type": 2048,
+                    "ip_proto": 1,
+                    "actions": [
+                        {
+                            "type": "NORMAL"
+                        }
+                    ],
+                    "priority": 1100
+                },
+                {
+                    "rule_id": 84,
+                    "in_port": 3,
+                    "eth_type": 2048,
+                    "ip_proto": 6,
+                    "ipv4_src": "10.0.0.2",
+                    "ipv4_dst": "10.0.0.8",
+                    "actions": [
+                        {
+                            "type": "OUTPUT",
+                            "port": 2
+                        }
+                    ],
+                    "priority": 800
+                }
+            ]
+        }
+    ]
+}

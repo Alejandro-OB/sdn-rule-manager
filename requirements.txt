@@ -1,0 +1,6 @@
+Flask
+Flask-CORS
+sqlite3
+ryu
+requests
+jsonschema
