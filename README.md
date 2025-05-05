@@ -1,9 +1,9 @@
 ---
-##Proyecto SDN con Ryu, Flask y SQLite
+Proyecto SDN con Ryu, Flask y SQLite
 ---
 Este proyecto permite gestionar reglas de red de forma dinámica en switches SDN utilizando **Ryu**, **Flask** y **SQLite**.
 ---
-##Características
+Características
 -  Controlador SDN (Ryu): Administra switches y reglas de tráfico dinámicamente.
 -  API REST (Flask): Consulta, agrega, modifica y elimina reglas en una base de datos SQLite.
 -  Persistencia (SQLite): Almacena reglas y logs de eventos en la red.
